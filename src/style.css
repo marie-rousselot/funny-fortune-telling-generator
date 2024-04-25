@@ -1,0 +1,69 @@
+body {
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/124/377/original/stars_image.jpeg?1714050513");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "sedan";
+}
+
+.container {
+  margin: 120px auto;
+  max-width: 600px;
+}
+
+h1 {
+  color: #fafafa;
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 1.5;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+form {
+  padding: 30px;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.instructions {
+  padding: 16px;
+  border: 1px solid rgba(39, 33, 66, 0.5);
+  width: 80%;
+  font-size: 16px;
+  border-radius: 50px;
+  line-height: 20px;
+  color: #24527a;
+}
+
+.submit-button {
+  margin-left: 10px;
+  background-color: #5dacbd;
+  color: #defcf9;
+  border: none;
+  width: 150px;
+  font-size: 16px;
+  border-radius: 50px;
+  padding: 14px 24px;
+}
+
+.funny-fortune-telling {
+  font-size: 20px;
+  color: #fafafa;
+  padding: 20px;
+  line-height: 1.5;
+  border-left: 3px solid #5dacbd;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+footer {
+  color: #fafafa;
+  text-align: center;
+  font-size: 13px;
+  margin-top: 30px;
+}
+a {
+  color: #fdffcd;
+  background-color: rgba(0, 0, 0, 0.4);
+}
