@@ -3,12 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="device-width=, initial-scale=1.0" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400..700&family=Freehand&family=Quattrocento:wght@400;700&family=Sedan:ital@0;1&display=swap"
       rel="stylesheet"
     />
+    
     <link rel="stylesheet" href="src/style.css" />
     <title>Document</title>
   </head>
@@ -18,7 +20,7 @@
         <h1>🔮 AI Funny Fortune Telling Generator</h1>
       </header>
       <main>
-        <form>
+        <form id="funny-fortune-generator">
           <input
             type="text"
             placeholder="Enter your star sign here..."
@@ -29,13 +31,7 @@
           />
           <input type="submit" class="submit-button" />
         </form>
-        <div class="funny-fortune-telling">
-          Ah dear Gemini, brace yourself for a week of indecision.
-          <br />
-          You'll spend more time choosing a Netflix show than actually watching
-          one!
-          <br />
-          But fear not, your charm will save you from any sticky situations
+        <div class="funny-fortune-telling" id="fortune">
         </div>
       </main>
       <footer>
