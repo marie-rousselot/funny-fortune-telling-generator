@@ -4,13 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="device-width=, initial-scale=1.0" />
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400..700&family=Freehand&family=Quattrocento:wght@400;700&family=Sedan:ital@0;1&display=swap"
       rel="stylesheet"
     />
-    
+
     <link rel="stylesheet" href="src/style.css" />
     <title>Document</title>
   </head>
@@ -28,11 +29,11 @@
             required
             autocomplete="off"
             class="instructions"
+            id="user-instructions"
           />
           <input type="submit" class="submit-button" />
         </form>
-        <div class="funny-fortune-telling" id="fortune">
-        </div>
+        <div class="funny-fortune-telling" id="fortune"></div>
       </main>
       <footer>
         This project was coded by

@@ -57,6 +57,10 @@ form {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
+.funny-fortune-telling strong {
+  color: #f49af0;
+}
+
 footer {
   color: #fafafa;
   text-align: center;

@@ -1,12 +1,27 @@
-function generateFortune(event) {
-  event.preventDefault();
-
+function displayFortune(response) {
+  console.log("fortune generated");
   new Typewriter("#fortune", {
-    strings: "Dear Gemini...",
+    strings: response.data.answer,
     autoStart: true,
-    delay: 1,
+    delay: 2,
     cursor: "",
   });
+}
+
+function generateFortune(event) {
+  event.preventDefault();
+  let instructionsInput = document.querySelector("#user-instructions");
+  let apiKey = "fdo0da8da8fd60t560b33ec66f43f0c4";
+  let prompt = `Generate a funny fortune telling related to ${instructionsInput.value}`;
+  let context =
+    "You are a funny fortune teller. Your mission is to generate a funny prediction according to my star sign. Be respectful and polite. Your answer must be short and fun and should include 3 different topics separated with a <br />: love, wealth and coding skills. Make sure to use the user instructions. Sign the fortune telling with 'Shecodes AI'in a <strong> at the end of the fortune telling and separate the signature with a <br />";
+  let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
+
+  console.log("Generating fortune");
+  console.log(`Prompt:${prompt}`);
+  console.log(`Context:${context}`);
+
+  axios.get(apiUrl).then(displayFortune);
 }
 
 let fortuneFormElement = document.querySelector("#funny-fortune-generator");
