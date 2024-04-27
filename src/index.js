@@ -17,6 +17,10 @@ function generateFortune(event) {
     "You are a funny fortune teller. Your mission is to generate a funny prediction according to my star sign. Be respectful and polite. Your answer must be short and fun and should include 3 different topics separated with a <br />: love, wealth and coding skills. Make sure to use the user instructions. Sign the fortune telling with 'Shecodes AI'in a <strong> at the end of the fortune telling and separate the signature with a <br />";
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
+  let fortuneElement = document.querySelector("#fortune");
+  fortuneElement.classList.remove("hidden");
+  fortuneElement.innerHTML = `<div class="generating"> ⏳ Generating fortune about ${instructionsInput.value}</div>`;
+
   console.log("Generating fortune");
   console.log(`Prompt:${prompt}`);
   console.log(`Context:${context}`);

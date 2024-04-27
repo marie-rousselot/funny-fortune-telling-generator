@@ -1,7 +1,7 @@
 body {
   background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/124/656/original/gradient-cyber-futuristic-background_23-2149117429.jpg?1714222422");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
   font-family: "sedan";
 }
 
@@ -57,6 +57,10 @@ form {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
+.hidden {
+  display: none;
+}
+
 .funny-fortune-telling strong {
   color: #f49af0;
 }
@@ -70,4 +74,14 @@ footer {
 a {
   color: #fec1c8;
   background-color: rgba(0, 0, 0, 0.4);
+}
+
+.generating {
+  animation: blink-animation 1s steps(5, start) infinite;
+}
+
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
 }
