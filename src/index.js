@@ -3,7 +3,7 @@ function displayFortune(response) {
   new Typewriter("#fortune", {
     strings: response.data.answer,
     autoStart: true,
-    delay: 2,
+    delay: 1,
     cursor: "",
   });
 }

@@ -1,7 +1,7 @@
 body {
-  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/124/377/original/stars_image.jpeg?1714050513");
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/124/656/original/gradient-cyber-futuristic-background_23-2149117429.jpg?1714222422");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100%;
   font-family: "sedan";
 }
 
@@ -16,7 +16,7 @@ h1 {
   font-size: 36px;
   line-height: 1.5;
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 form {
@@ -39,8 +39,8 @@ form {
 
 .submit-button {
   margin-left: 10px;
-  background-color: #5dacbd;
-  color: #defcf9;
+  background-color: #0d92ca;
+  color: #ffffff;
   border: none;
   width: 150px;
   font-size: 16px;
@@ -50,10 +50,10 @@ form {
 
 .funny-fortune-telling {
   font-size: 20px;
-  color: #fafafa;
+  color: #ffffff;
   padding: 20px;
   line-height: 1.5;
-  border-left: 3px solid #5dacbd;
+  border-left: 3px solid #0d92ca;
   background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -68,6 +68,6 @@ footer {
   margin-top: 30px;
 }
 a {
-  color: #fdffcd;
+  color: #fec1c8;
   background-color: rgba(0, 0, 0, 0.4);
 }
